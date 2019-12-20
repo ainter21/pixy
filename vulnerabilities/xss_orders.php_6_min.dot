@@ -1,0 +1,9 @@
+digraph cfg {
+  label="xss_orders.php_6_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/orders.php : 37\nVar: _t0_0\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/orders.php : 37\nbuiltin function:\n.\n"];
+  n3 [shape=box, label="/opt/lampp/htdocs/inventory-management-system/orders.php : 37\nVar: $_GET[i]\nFunc: _superglobals\n",style=filled];
+  n1 -> n2;
+  n2 -> n3;
+}

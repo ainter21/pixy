@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_orders.php_41_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/orders.php : 404\nVar: $data[4]\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/orders.php : 281\nbuiltin function:\nmysqli_fetch_row\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

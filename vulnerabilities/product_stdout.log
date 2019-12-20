@@ -1,0 +1,114 @@
+File: /opt/lampp/htdocs/inventory-management-system/product.php
+
+*** resolving literal includes ***
+
+.....
+
+inclusion iterations:            1
+resolved literal includes:       5
+resolved non-literal includes:   0
+cyclic includes:                 0
+not found includes:              0
+unresolved non-literal includes: 0
+
+
+
+*** initializing alias analysis ***
+
+
+*** performing alias analysis ***
+
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+
+*** cleaning up ***
+
+
+Finished.
+
+*** performing taint analysis ***
+
+
+Finished.
+
+Time: 0 seconds
+
+*** detecting vulnerabilities ***
+
+
+*****************
+XSS Analysis BEGIN
+*****************
+
+Number of sinks: 4
+
+XSS Analysis Output
+--------------------
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/product.php:109
+- Graph: xss1
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/product.php:128
+- Graph: xss2
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/product.php:267
+- Graph: xss3
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/product.php:286
+- Graph: xss4
+
+Total Vuln Count: 4
+
+*****************
+XSS Analysis END
+*****************
+
+
+*****************
+SQL Analysis BEGIN
+*****************
+
+Number of sinks: 0
+
+SQL Analysis Output
+--------------------
+
+Total Vuln Count: 0
+
+*****************
+SQL Analysis END
+*****************
+
+Total Time: 1 seconds
+
+

@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_dashboard.php_3_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/dashboard.php : 75\nVar: $countProduct\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/dashboard.php : 7\nbuiltin function:\nmysqli_num_rows\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

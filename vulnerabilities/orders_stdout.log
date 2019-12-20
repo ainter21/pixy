@@ -1,0 +1,270 @@
+File: /opt/lampp/htdocs/inventory-management-system/orders.php
+
+*** resolving literal includes ***
+
+.....
+
+inclusion iterations:            1
+resolved literal includes:       5
+resolved non-literal includes:   0
+cyclic includes:                 0
+not found includes:              0
+unresolved non-literal includes: 0
+
+
+
+*** initializing alias analysis ***
+
+
+*** performing alias analysis ***
+
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+
+*** cleaning up ***
+
+
+Finished.
+
+*** performing taint analysis ***
+
+
+Finished.
+
+Time: 1 seconds
+
+*** detecting vulnerabilities ***
+
+
+*****************
+XSS Analysis BEGIN
+*****************
+
+Number of sinks: 64
+
+XSS Analysis Output
+--------------------
+
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:37
+- Graph: xss6
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:111
+- Graph: xss11
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:287
+- Graph: xss20
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:293
+- Graph: xss21
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:299
+- Graph: xss22
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:345
+- Graph: xss27
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:353
+- Graph: xss29
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:354
+- Graph: xss31
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:365
+- Graph: xss32
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:380
+- Graph: xss35
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:384
+- Graph: xss37
+
+Unmodeled builtin function: mysqli_fetch_array
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:385
+- Graph: xss39
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:404
+- Graph: xss41
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:405
+- Graph: xss42
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:412
+- Graph: xss43
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:413
+- Graph: xss44
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:419
+- Graph: xss45
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:425
+- Graph: xss46
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:426
+- Graph: xss47
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:432
+- Graph: xss50
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:433
+- Graph: xss51
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:439
+- Graph: xss52
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:448
+- Graph: xss53
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:454
+- Graph: xss54
+
+Unmodeled builtin function: mysqli_fetch_row
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:455
+- Graph: xss55
+
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/orders.php:513
+- Graph: xss64
+
+Total Vuln Count: 26
+
+*****************
+XSS Analysis END
+*****************
+
+
+*****************
+SQL Analysis BEGIN
+*****************
+
+Number of sinks: 0
+
+SQL Analysis Output
+--------------------
+
+Total Vuln Count: 0
+
+*****************
+SQL Analysis END
+*****************
+
+Total Time: 1 seconds
+
+

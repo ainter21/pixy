@@ -11,8 +11,10 @@ def write_on_file(content: str, destination: str):
 
 def copy_folder_content_to(source_dir: str, destination_dir: str):
     files = glob.glob(source_dir + '/*')
+    print(files)
     if not os.path.exists(destination_dir):
         os.makedirs(destination_dir)
+
     for f in files:
         shutil.copy2(f, destination_dir)
 
@@ -22,6 +24,7 @@ def execute_pixy(php_file_path: str, output_folder: str):
     stdout = result.stdout.decode('utf-8')
     base_filename = os.path.basename(php_file_path)
     php_filename = os.path.splitext(base_filename)[0]
+    print(php_filename)
     write_on_file(stdout, './graphs/' + php_filename + '_stdout.log')
     copy_folder_content_to('./graphs', output_folder)
 

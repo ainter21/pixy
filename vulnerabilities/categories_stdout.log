@@ -1,0 +1,86 @@
+File: /opt/lampp/htdocs/inventory-management-system/categories.php
+
+*** resolving literal includes ***
+
+....
+
+inclusion iterations:            1
+resolved literal includes:       4
+resolved non-literal includes:   0
+cyclic includes:                 0
+not found includes:              0
+unresolved non-literal includes: 0
+
+
+
+*** initializing alias analysis ***
+
+
+*** performing alias analysis ***
+
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+
+*** cleaning up ***
+
+
+Finished.
+
+*** performing taint analysis ***
+
+
+Finished.
+
+Time: 0 seconds
+
+*** detecting vulnerabilities ***
+
+
+*****************
+XSS Analysis BEGIN
+*****************
+
+Number of sinks: 0
+
+XSS Analysis Output
+--------------------
+
+Total Vuln Count: 0
+
+*****************
+XSS Analysis END
+*****************
+
+
+*****************
+SQL Analysis BEGIN
+*****************
+
+Number of sinks: 0
+
+SQL Analysis Output
+--------------------
+
+Total Vuln Count: 0
+
+*****************
+SQL Analysis END
+*****************
+
+Total Time: 0 seconds
+
+

@@ -1,0 +1,131 @@
+File: /opt/lampp/htdocs/inventory-management-system/dashboard.php
+
+*** resolving literal includes ***
+
+....
+
+inclusion iterations:            1
+resolved literal includes:       4
+resolved non-literal includes:   0
+cyclic includes:                 0
+not found includes:              0
+unresolved non-literal includes: 0
+
+
+
+*** initializing alias analysis ***
+
+
+*** performing alias analysis ***
+
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+exact match!
+
+*** cleaning up ***
+
+
+Finished.
+
+*** performing taint analysis ***
+
+
+Finished.
+
+Time: 0 seconds
+
+*** detecting vulnerabilities ***
+
+
+*****************
+XSS Analysis BEGIN
+*****************
+
+Number of sinks: 11
+
+XSS Analysis Output
+--------------------
+
+Unmodeled builtin function: mysqli_num_rows
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/dashboard.php:75
+- Graph: xss3
+
+Unmodeled builtin function: mysqli_num_rows
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/dashboard.php:87
+- Graph: xss4
+
+Unmodeled builtin function: mysqli_num_rows
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/dashboard.php:101
+- Graph: xss5
+
+Unmodeled builtin function: mysqli_fetch_assoc
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/dashboard.php:153
+- Graph: xss10
+
+Unmodeled builtin function: mysqli_fetch_assoc
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/dashboard.php:154
+- Graph: xss11
+
+Total Vuln Count: 5
+
+*****************
+XSS Analysis END
+*****************
+
+
+*****************
+SQL Analysis BEGIN
+*****************
+
+Number of sinks: 0
+
+SQL Analysis Output
+--------------------
+
+Total Vuln Count: 0
+
+*****************
+SQL Analysis END
+*****************
+
+Total Time: 1 seconds
+
+

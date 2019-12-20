@@ -1,0 +1,80 @@
+File: /opt/lampp/htdocs/inventory-management-system/php_action/editPayment.php
+
+*** resolving literal includes ***
+
+..
+Warning: can't find function json_encode
+- /opt/lampp/htdocs/inventory-management-system/php_action/editPayment.php:31
+
+inclusion iterations:            1
+resolved literal includes:       2
+resolved non-literal includes:   0
+cyclic includes:                 0
+not found includes:              0
+unresolved non-literal includes: 0
+
+
+
+*** initializing alias analysis ***
+
+
+*** performing alias analysis ***
+
+exact match!
+exact match!
+exact match!
+
+*** cleaning up ***
+
+
+Finished.
+
+*** performing taint analysis ***
+
+
+Finished.
+
+Time: 0 seconds
+
+*** detecting vulnerabilities ***
+
+
+*****************
+XSS Analysis BEGIN
+*****************
+
+Number of sinks: 1
+
+XSS Analysis Output
+--------------------
+
+Vulnerability detected!
+- unconditional
+- /opt/lampp/htdocs/inventory-management-system/php_action/editPayment.php:31
+- Graph: xss1
+
+Total Vuln Count: 1
+
+*****************
+XSS Analysis END
+*****************
+
+
+*****************
+SQL Analysis BEGIN
+*****************
+
+Number of sinks: 0
+
+SQL Analysis Output
+--------------------
+
+Total Vuln Count: 0
+
+*****************
+SQL Analysis END
+*****************
+
+Total Time: 1 seconds
+
+

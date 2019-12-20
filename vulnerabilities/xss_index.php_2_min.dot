@@ -1,0 +1,5 @@
+digraph cfg {
+  label="xss_index.php_2_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/index.php : 100\nVar: $_SERVER[PHP_SELF]\nFunc: _superglobals\n",style=filled];
+}

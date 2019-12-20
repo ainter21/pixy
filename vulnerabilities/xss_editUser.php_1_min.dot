@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_editUser.php_1_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/php_action/editUser.php : 27\nVar: _t0_0\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/php_action/editUser.php : 27\nunresolved function:\njson_encode\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

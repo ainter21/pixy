@@ -1,0 +1,7 @@
+digraph cfg {
+  label="xss_setting.php_4_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/setting.php : 63\nVar: $result[user_id]\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/setting.php : 7\nbuiltin function:\nmysqli_fetch_assoc\n(unmodeled)\n",style=filled];
+  n1 -> n2;
+}

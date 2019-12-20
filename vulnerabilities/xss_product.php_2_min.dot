@@ -1,0 +1,22 @@
+digraph cfg {
+  label="xss_product.php_2_min";
+  labelloc=t;
+  n1 [shape=doubleoctagon, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nVar: _t0_0\nFunc: _main\n"];
+  n2 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nbuiltin function:\n.\n"];
+  n3 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nbuiltin function:\n.\n"];
+  n4 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nbuiltin function:\n.\n"];
+  n5 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nbuiltin function:\n.\n"];
+  n6 [shape=box, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nVar: $row[0]\nFunc: _main\n"];
+  n7 [shape=box, label="/opt/lampp/htdocs/inventory-management-system/product.php : 127\nVar: _t0_0\nFunc: _main\n"];
+  n8 [shape=ellipse, label="/opt/lampp/htdocs/inventory-management-system/product.php : 127\nbuiltin function:\nmysqli_fetch_array\n(unmodeled)\n",style=filled];
+  n9 [shape=box, label="/opt/lampp/htdocs/inventory-management-system/product.php : 128\nVar: $row[1]\nFunc: _main\n"];
+  n1 -> n2;
+  n2 -> n3;
+  n3 -> n4;
+  n3 -> n9;
+  n4 -> n5;
+  n5 -> n6;
+  n6 -> n7;
+  n7 -> n8;
+  n9 -> n7;
+}
